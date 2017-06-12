@@ -57,7 +57,7 @@
         var div = document.createElement('div');
         div.innerHTML = htmlEscapedText;
         return div.innerText;
-    }
+    };
 
     var isImage = function (url) {
         var deferred = new $.Deferred();
@@ -448,13 +448,13 @@
 
     utils.isConverseLocale = function (locale) {
         if (!_.isString(locale)) { return false; }
-        return _.includes(_.keys(locales || {}), locale)
+        return _.includes(_.keys(locales || {}), locale);
     };
 
     utils.isMomentLocale  = function (locale) {
         if (!_.isString(locale)) { return false; }
         return moment.locale() !== moment.locale(locale);
-    }
+    };
 
     utils.getLocale = function (preferred_locale, isSupportedByLibrary) {
         if (_.isString(preferred_locale)) {
@@ -473,7 +473,7 @@
 
     utils.isOfType = function (type, item) {
         return item.get('type') == type;
-    }
+    };
 
     utils.isInstance = function (type, item) {
         return item instanceof type;
@@ -501,7 +501,7 @@
         }
         element.appendChild(frag); // Now, append all elements at once
         frag = tmp = null;
-    }
+    };
 
     return utils;
 }));

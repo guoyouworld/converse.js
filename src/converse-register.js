@@ -29,12 +29,12 @@
     "use strict";
 
     // Strophe methods for building stanzas
-    var Strophe = converse.env.Strophe,
+    const Strophe = converse.env.Strophe,
         Backbone = converse.env.Backbone,
         utils = converse.env.utils,
         $iq = converse.env.$iq;
     // Other necessary globals
-    var $ = converse.env.jQuery,
+    const $ = converse.env.jQuery,
         _ = converse.env._;
 
     // Add Strophe Namespaces
